@@ -1,0 +1,42 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Establece estilo al boton.
+Lo pone de color verde.
+*/
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Especifidad 0, 0, 1
+Cambia el tipo de display de section
+*/
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+
+/* Especifidad 0, 0, 2 
+Aplica un color de fondo y estilo a los article dentro de section.
+Hereda el color de primer plano de body en estilos.css
+*/
+section > article {
+    background-color: white;
+    color: #000000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}

@@ -1,0 +1,110 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Ajusta el main de semaforo cambiando su display y disposicion de los elementos
+*/
+main {
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Especifidad 0, 0, 2 
+Encabezado del semáforo */
+main h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Especifidad 0, 1, 1
+Luces del semáforo */
+main .light {
+    color: #000;
+    background-color: #0007;
+    border: 3px solid #000;
+    aspect-ratio: 1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* Especifidad 0, 0, 2
+Botones de inicio y medir reacción */
+main button {
+    grid-column: span 2;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Especifidad 0, 2, 1
+Animaciones de encendido
+REDEFINICIONES DE:
+    - animation-duration
+    - animation-name
+    - animation-fill-mode
+*/
+main.load .light1 {
+    animation: lightOn 0.5s forwards 0s;
+}
+
+main.load .light2 {
+    animation: lightOn 0.5s forwards 0.5s;
+}
+
+main.load .light3 {
+    animation: lightOn 0.5s forwards 1s;
+}
+
+main.load .light4 {
+    animation: lightOn 0.5s forwards 1.5s;
+}
+
+/* Especifidad 0, 2, 1 
+Animaciones de encendido unload
+REDEFINICIONES DE:
+    - animation
+*/
+main.unload .light {
+    animation: out 0.5s forwards 1.5s;
+}
+
+/* Especifidad 0, 2, 1 
+Animaciones de encendido unload
+REDEFINICIONES DE:
+    - animation
+*/
+main.unload .light {
+    animation: out 0.1s forwards;
+}
+
+/*
+Redefiniciones de background-color
+No necesita un color de primer plano
+*/
+@keyframes out {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: #0007;
+    }
+}
+
+/*
+Redefiniciones de background-color
+No necesita un color de primer plano
+*/
+@keyframes lightOn {
+    from {
+        background-color: #0007;
+    }
+    to {
+        background-color: red;
+    }
+}

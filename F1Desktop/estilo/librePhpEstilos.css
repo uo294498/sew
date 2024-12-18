@@ -1,0 +1,62 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Ajusta el main para el formulario
+El color de primer plano lo hereda de body de estilos.css
+*/
+main {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Especifidad 0, 0, 1
+Ajusta el form añadiendole un display flex y ajustando la direccion
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Especifidad 0, 0, 1
+Pone el label en negrita
+*/
+label {
+    font-weight: bold;
+}
+
+/* Especifidad 0, 3, 1
+Ajusta los inputs cuyo tipos son text, number o email
+Les añade borde blanco y ajusta su ancho
+*/
+input[type="text"], input[type="number"], input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 95%;
+}
+
+/* Especifidad 0, 1, 1
+Ajusta el boton añadiendo fondo azul y color blanco a la fuente
+*/
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: fit-content;
+}
+
+/* Especifidad 0, 1, 1
+Ajusta el boton para añadirle un efecto hover
+El color de primer plano lo hereda de button de este mismo documento
+*/
+button:hover {
+    background-color: #0056b3;
+}

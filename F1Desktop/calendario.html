@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Pablo Alonso Camporro" />
+    <meta name ="description" content ="Calendario de Formula 1" />
+    <meta name ="keywords" content ="Formula 1, Calendario" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <title>Calendario</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda_grid.css" />
+    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <script src="js/agenda.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>F1Desktop</h1>
+        <nav> 
+            <a href="index.html" title="Enlace al Indice">Inicio</a>
+            <a href="piloto.html" title="Enlace al Piloto">Piloto</a>
+            <a href="noticias.html" title="Enlace a las Noticias">Noticias</a>
+            <a href="calendario.html" title="Enlace al Calendario">Calendario</a>
+            <a href="meteorología.html" title="Enlace a la Metereología">Metereología</a>
+            <a href="circuito.html" title="Enlace al Circuito">Circuito</a>
+            <a href="php/viajes.php" title="Enlace a los Viajes">Viajes</a>
+            <a href="juegos.html" title="Enlace a los Juegos">Juegos</a>
+        </nav>
+    </header>
+
+    <p>Estás en <a href="index.html" title="Enlace al Indice">Inicio</a> >> Calendario</p>
+
+    <h2>Calendario</h2>
+    <main>
+        <button>Mostrar carreras de la temporada</button>
+    </main>
+
+    <script>
+        var agenda = new Agenda();
+    </script>
+</body>
+</html>

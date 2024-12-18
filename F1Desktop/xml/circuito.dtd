@@ -1,0 +1,21 @@
+<!ELEMENT circuitos (circuito+)>
+<!ELEMENT circuito (nombre,longitud,anchuramedia,fecha,horainicio,vueltas,localidad,pais,referencia+,fotografia+,video*,coord,tramos+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT anchuramedia (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT horainicio (#PCDATA)>
+<!ELEMENT vueltas (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ELEMENT video (#PCDATA)>
+<!ELEMENT coord (coordlong,coordlat,coordalt)>
+<!ELEMENT coordlong (#PCDATA)>
+<!ELEMENT coordlat (#PCDATA)>
+<!ELEMENT coordalt (#PCDATA)>
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (coord,numsector)>
+<!ATTLIST tramo distancia CDATA #REQUIRED>
+<!ELEMENT numsector (#PCDATA)>

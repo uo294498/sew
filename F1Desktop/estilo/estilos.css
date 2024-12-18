@@ -1,0 +1,126 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad  0, 0, 1
+El body tiene fondo azul claro
+Color Body gris oscuro
+*/
+body {
+    background-color: #b1d4e0;
+    color: #333333; 
+    font-family: 'Calibri', sans-serif;
+    margin:0;
+}
+
+/* Especifidad  0, 0, 2
+Pone margen al body
+*/
+body main {
+    margin: 10px;
+}
+
+/* Especifidad  0, 0, 2
+Pone margen al section
+*/
+body section {
+    margin: 10px;
+}
+
+/* Especifidad  0, 0, 2
+Pone margen al section
+*/
+body aside {
+    margin: 10px;
+}
+
+/* Especifidad  0, 1, 2
+Cambia el tamaño de letra
+*/
+body>p:first-of-type {
+    font-size: 15px;
+    margin: 5px;
+}
+
+/* Especifidad  0, 1, 2
+Cambia el tamaño de letra y el simbolo de lista
+*/
+section>ul:first-of-type {
+    font-size: 14px;
+    list-style-type: square;
+}
+
+/* Especifidad  0, 0, 1
+El header tiene fondo azul
+Color Header blanco
+*/
+header {
+    background-color: #1F5C7F;
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+/* Especifidad  0, 0, 1
+Ajusta el contenido del nav al centro
+*/
+nav {
+    align-content: center;
+}
+
+/* Especifidad  0, 0, 2
+Selecciona todos los enlaces dentro de <nav>
+Hereda el color de fondo de header 
+Color blanco
+*/
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+/* Especifidad 0, 0, 1
+Ajusta el ancho y alto del video
+*/
+video {
+    width:50%;
+    height:auto;
+    display: block;
+    margin: auto;
+}
+
+/* Especifidad 0, 0, 1
+Ajusta el display del video
+*/
+audio {
+    display: block;
+    margin: auto;
+}
+
+/* Especifidad 0, 0 ,1
+Ajustes generales para la tabla
+*/
+table {
+    width: 25%;
+    font-family: Arial, sans-serif;
+}
+
+/* Especifidad 0, 0, 1
+Estilo de las celdas de encabezado
+*/
+th {
+    background-color: #1F5C7F;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Especifidad 0, 0, 1
+Estilo de las celdas de datos 
+*/
+td {
+    background-color: #f2f2f2; 
+    color: #333333;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}

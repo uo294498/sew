@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://www.uniovi.es" elementFormDefault="qualified" targetNamespace="http://www.uniovi.es" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="circuitos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="circuito" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="circuito">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre" />
+				<xs:element ref="longitud" />
+				<xs:element ref="anchuramedia" />
+				<xs:element ref="fecha" />
+				<xs:element ref="horainicio" />
+				<xs:element ref="vueltas" />
+				<xs:element ref="localidad" />
+				<xs:element ref="pais" />
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="referencia" />
+				<xs:element minOccurs="1" maxOccurs="5" ref="fotografia" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+				<xs:element ref="coord" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="tramos" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre" type="xs:string" />
+	<xs:element name="longitud" type="xs:float" />
+	<xs:element name="anchuramedia" type="xs:float" />
+	<xs:element name="fecha" type="xs:date" />
+	<xs:element name="horainicio" type="xs:string" />
+	<xs:element name="vueltas" type="xs:int" />
+	<xs:element name="localidad" type="xs:string" />
+	<xs:element name="pais" type="xs:string" />
+	<xs:element name="referencia" type="xs:string" />
+	<xs:element name="fotografia" type="xs:string" />
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="coord">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="coordlong" />
+				<xs:element ref="coordlat" />
+				<xs:element ref="coordalt" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="coordlong" type="xs:float" />
+	<xs:element name="coordlat" type="xs:float" />
+	<xs:element name="coordalt" type="xs:float" />
+	<xs:element name="tramos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="tramo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tramo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="coord" />
+				<xs:element ref="numsector" />
+			</xs:sequence>
+			<xs:attribute name="distancia" type="xs:float" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="numsector" type="xs:int" />
+</xs:schema>

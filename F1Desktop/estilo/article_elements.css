@@ -1,0 +1,26 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Establece el display del section para que 
+los elementos se vean por columnas
+*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+/* Especifidad 0, 0, 2 
+Aplica un color de fondo y estilo a los article dentro de section.
+*/
+section > article {
+    border: 2px solid #1F5C7F;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #67c0ff;
+    color: #333333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

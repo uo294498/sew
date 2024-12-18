@@ -1,0 +1,9 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Ajusta el display de header a flex
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+}

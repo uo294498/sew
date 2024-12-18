@@ -1,0 +1,102 @@
+/* Pablo Alonso Camporro y UO294498 */
+
+/* Especifidad 0, 0, 1
+Modifica el section para funcionamiento carrusel
+*/
+section {
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+/* Especifidad 0, 0, 2
+Modifica el article de debajo del carrusel para el cambio de moneda
+*/
+section + section{
+    height: 120vh;
+}
+
+/* Especifidad 0, 0, 1
+Modifica el article para funcionamiento carrusel
+*/
+article {
+    width: 100%;
+    max-width: 100vh;
+    height: 70vh;
+    position: relative;
+    overflow: hidden; /* <===  */
+    border-radius: 1em;
+}
+
+/* Especifidad 0, 0, 2
+Alinea el encabezado del carrusel
+*/
+article h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+main img {
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+/* Especifidad 0, 0, 2
+Modifica las imagenes dentro del carrusel 
+*/
+article img {
+    width: 100%;
+    max-width: 100vh;
+    height: 60vh;
+    position: absolute;
+    transition: all 0.5s;
+    object-fit: cover;
+    border-radius: 0.5em;
+}
+
+/* Especifidad 0, 1, 1
+Cambia el estilo del boton
+*/
+button {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+    border: none;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    color: #000000;
+    background-color: #fff;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+/* Especifidad 0, 1, 1
+Transforma los botones del carrusel
+*/
+button:active {
+    transform: scale(1.1);
+}
+  
+/* Especifidad 0, 1, 1
+Transforma boton de un tipo
+*/
+button:nth-of-type(2) {
+    top: 50%;
+    left: 2%;
+}
+
+/* Especifidad 0, 1, 1
+Transforma boton de un tipo
+*/
+button:nth-of-type(1) {
+    top: 50%;
+    right: 2%;
+}

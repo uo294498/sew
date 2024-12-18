@@ -1,0 +1,226 @@
+<?xml version= "1.0" encoding = "UTF-8" standalone="no" ?>
+
+<circuito 
+xmlns="http://www.uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uniovi.es circuito.xsd"
+>
+    <nombre>Circuit of the Americas</nombre>
+    <longitud>5.516</longitud>
+    <anchuramedia>15</anchuramedia>
+    <fecha>2024-10-20</fecha>
+    <horainicio>21:00</horainicio>
+    <vueltas>56</vueltas>
+    <localidad>Austin</localidad>
+    <pais>EEUU</pais>
+    <referencia>https://circuitoftheamericas.com/</referencia>
+    <referencia>https://es.wikipedia.org/wiki/Circuito_de_las_Américas</referencia>
+    <referencia>https://www.formula1.com/en/racing/2024/United_States.html</referencia>
+    <fotografia>CircuitOfAmericasPhoto.jpg</fotografia>
+    <fotografia>CircuitOfAmericasParrilla.jpg</fotografia>
+    <fotografia>CircuitOfAmericasMap.png</fotografia>
+    <coord>
+        <coordlong>-97.6398397</coordlong>
+        <coordlat>30.1318819</coordlat>
+        <coordalt>220</coordalt>
+    </coord>
+    <tramos>
+        <tramo distancia="800">
+            <coord>
+                <coordlong>-97.6434955</coordlong>
+                <coordlat>30.1344510</coordlat>
+                <coordalt>161.1243359</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="240">
+            <coord>
+                <coordlong>-97.6367805</coordlong>
+                <coordlat>30.1299838</coordlat>
+                <coordalt>157.7683832</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="256">
+            <coord>
+                <coordlong>-97.6372905</coordlong>
+                <coordlat>30.1321556</coordlat>
+                <coordalt>158.2830018</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="90">
+            <coord>
+                <coordlong>-97.6351127</coordlong>
+                <coordlat>30.1336127</coordlat>
+                <coordalt>165.4131850</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="92.52">
+            <coord>
+                <coordlong>-97.6346819</coordlong>
+                <coordlat>30.1343709</coordlat>
+                <coordalt>165.4129230</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="152">
+            <coord>
+                <coordlong>-97.6338692</coordlong>
+                <coordlat>30.1347700</coordlat>
+                <coordalt>164.1769243</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+
+        <tramo distancia="200">
+            <coord>
+                <coordlong>-97.6330348</coordlong>
+                <coordlat>30.1360709</coordlat>
+                <coordalt>165.5998937</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="200.84">
+            <coord>
+                <coordlong>-97.6310962</coordlong>
+                <coordlat>30.1357419</coordlat>
+                <coordalt>166.9393909</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="132.62">
+            <coord>
+                <coordlong>-97.6297031</coordlong>
+                <coordlat>30.1366515</coordlat>
+                <coordalt>177.1579053</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="175.5">
+            <coord>
+                <coordlong>-97.6290563</coordlong>
+                <coordlat>30.1361722</coordlat>
+                <coordalt>177.5309498</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="400">
+            <coord>
+                <coordlong>-97.6270187</coordlong>
+                <coordlat>30.1365322</coordlat>
+                <coordalt>164.5309498</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="1194">
+            <coord>
+                <coordlong>-97.6244381</coordlong>
+                <coordlat>30.1393993</coordlat>
+                <coordalt>162.9401492</coordalt>
+            </coord>
+            <numsector>2</numsector>
+        </tramo>
+
+        <tramo distancia="230">
+            <coord>
+                <coordlong>-97.6365919</coordlong>
+                <coordlat>30.1372913</coordlat>
+                <coordalt>160.9789742</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="90">
+            <coord>
+                <coordlong>-97.6353970</coordlong>
+                <coordlat>30.1355644</coordlat>
+                <coordalt>160.9789742</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="128">
+            <coord>
+                <coordlong>-97.6364023</coordlong>
+                <coordlat>30.1355662</coordlat>
+                <coordalt>161.2633041</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="64">
+            <coord>
+                <coordlong>-97.6371342</coordlong>
+                <coordlat>30.1365527</coordlat>
+                <coordalt>161.2633041</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="207">
+            <coord>
+                <coordlong>-97.6377925</coordlong>
+                <coordlat>30.1365128</coordlat>
+                <coordalt>162.3221452</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="95.1">
+            <coord>
+                <coordlong>-97.6367920</coordlong>
+                <coordlat>30.1347611</coordlat>
+                <coordalt>163.2304842</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="158.15">
+            <coord>
+                <coordlong>-97.6370709</coordlong>
+                <coordlat>30.1340261</coordlat>
+                <coordalt>165.9913982</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="280">
+            <coord>
+                <coordlong>-97.6385753</coordlong>
+                <coordlat>30.1336508</coordlat>
+                <coordalt>158.5597623</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="292">
+            <coord>
+                <coordlong>-97.6406315</coordlong>
+                <coordlat>30.1355078</coordlat>
+                <coordalt>157.9950161</coordalt>
+            </coord>
+            <numsector>3</numsector>
+        </tramo>
+
+        <tramo distancia="800">
+            <coord>
+                <coordlong>-97.6434955</coordlong>
+                <coordlat>30.1344510</coordlat>
+                <coordalt>161.1243359</coordalt>
+            </coord>
+            <numsector>1</numsector>
+        </tramo>
+    </tramos>
+</circuito>
